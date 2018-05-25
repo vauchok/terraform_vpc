@@ -1,6 +1,6 @@
 def apply = false
 pipeline {
-  agent { label 'EC2'}
+  agent { label 'ec2'}
   options {
     skipDefaultCheckout(true)
   }
