@@ -1,14 +1,14 @@
-variable "name" {}
-variable "create_vpc" {}
-variable "cidr" {}
-variable "instance_tenancy" {}
-variable "public_subnets" {}
-variable "private_subnets" {}
-variable "database_subnets" {}
-variable "redshift_subnets" {}
-variable "elasticache_subnets" {}
-variable "create_database_subnet_group" {}
-variable "azs" {}
+variable "name" { }
+variable "create_vpc" { }
+variable "cidr" { }
+variable "instance_tenancy" { }
+variable "public_subnets" { }
+variable "private_subnets" { }
+variable "database_subnets" { }
+variable "redshift_subnets" { }
+variable "elasticache_subnets" { }
+variable "create_database_subnet_group" { }
+variable "azs" { }
 variable "enable_dns_hostnames" {}
 variable "enable_dns_support" {}
 variable "enable_nat_gateway" {}
