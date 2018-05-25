@@ -1,3 +1,4 @@
+/*
 variable "create_vpc" {}
 variable "name" {}
 variable "cidr" {}
@@ -46,7 +47,8 @@ variable "default_vpc_enable_dns_support" {}
 variable "default_vpc_enable_dns_hostnames" {}
 variable "default_vpc_enable_classiclink" {}
 variable "default_vpc_tags" {}
-
+*/
+  
 provider "aws" {
   region = "us-west-1"
 }
