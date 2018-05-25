@@ -36,7 +36,7 @@ pipeline {
       steps {
         script {
           dir('vpc') {
-            sh "set +e;${terraformHome}/terraform plan -out=plan.out -var-file=../environments/test/variables.tfvars -detailed-exitcode; echo \$? > plan.status"
+            sh "set +e;${terraformHome}/terraform plan -out=plan.out -var-file=./variables.tfvars -detailed-exitcode; echo \$? > plan.status"
             def exitCode = readFile('plan.status').trim()
             echo "Terraform Plan Exit Code: ${exitCode}"
             if (exitCode == "0") {
