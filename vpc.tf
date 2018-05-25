@@ -1,6 +1,5 @@
-/*
-variable "create_vpc" {}
 variable "name" {}
+variable "create_vpc" {}
 variable "cidr" {}
 variable "instance_tenancy" {}
 variable "public_subnets" {}
@@ -47,7 +46,7 @@ variable "default_vpc_enable_dns_support" {}
 variable "default_vpc_enable_dns_hostnames" {}
 variable "default_vpc_enable_classiclink" {}
 variable "default_vpc_tags" {}
-*/
+
   
 provider "aws" {
   region = "us-west-1"
