@@ -81,5 +81,16 @@ pipeline {
         }
       }
     }
+    stage ('destroy') {
+      steps {
+        script {
+          dir('vpc') {
+            sh "ls -la"
+            sh "set +e; ${terraformHome}/terraform destroy"
+            slackSend channel: '#iad-test', color: 'good', message: "Changes Destroyed ()"
+          }
+        }
+      }
+    }
   }
 }
